@@ -1,0 +1,14 @@
+
+# Java / Gradle
+**/build/
+**/.gradle/
+**/out/
+*.iml
+
+# Node (quand on créera le front)
+frontend/node_modules/
+frontend/dist/
+
+# OS / IDE
+.DS_Store
+.idea/
