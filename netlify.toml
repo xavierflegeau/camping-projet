@@ -1,0 +1,15 @@
+# netlify.toml (monorepo Vue + Vite)
+[build]
+  base    = "frontend"
+  publish = "dist"
+  command = "npm ci && npm run build"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# si tu utilises un router en mode history (utile plus tard)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
